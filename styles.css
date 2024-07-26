@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(180deg, #F0FFFF,#FDFCFB ); /* Gradient background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Increased container width */
+    width: 100%;
+}
+
+h1 {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+    font-size: 2rem; /* Larger font size */
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Gray text color */
+}
+
+input[type="text"], input[type="color"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px;
+    background-color: #f7f7f7; /* Light gray background */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="color"]:focus, input[type="number"]:focus {
+    border-color: #6c757d; /* Dark gray border color on focus */
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #4b7bec, #1e90ff); /* Gradient button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.1rem; /* Increased font size */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3867d6, #0a84ff); /* Darker gradient on hover */
+}
+
+#qr-result {
+    margin-top: 30px;
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling */
+    max-height: 70vh; /* Set a max height */
+}
+
+#qr-code {
+    max-width: 100%; /* Full width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #28a745, #218838); /* Gradient button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 1rem; /* Font size */
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient on hover */
+}
