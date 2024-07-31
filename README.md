@@ -56,3 +56,8 @@ Contributions are welcome! If you have suggestions or improvements, please follo
 
 5.Create a new Pull Request. 
 
+--License
+
+This project is licensed under the MIT License. See the MIT LICENSE file for details.
+
+
